@@ -1,19 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import {MatCardModule} from '@angular/material/card';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 import { Subscription } from 'rxjs';
 
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
-
-  title = 'automaga';
+export class HomeComponent implements OnInit {
   mediaSub: Subscription;
   tamanoXs: boolean; // estamos subscritos a un metodo que nos devuelve un valor verdadero cuando el tamaño de nuestra app se vuelve XS 
   constructor(public mediaObserver: MediaObserver) {
