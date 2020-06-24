@@ -2,28 +2,31 @@
   <mat-toolbar-row fxLayoutAlign="space-between center">
     <div fxLayout="row">
       <button mat-button>
-        <mat-icon>home</mat-icon>
+        <mat-icon>directions_bus</mat-icon>
         <span class="logo">AutoMaga</span>
       </button>
       <div *ngIf="!tamano" fxLayout="row">
-        <button mat-button>Home</button>
-        <a routerLink="home"><button mat-button>Sobre nosotros</button></a>
-        <button mat-button>Contacto</button>
+        <a routerLink="home"> <button mat-button>Home</button></a>
+        <a routerLink="about"><button mat-button>Sobre nosotros</button></a>
+        <a routerLink="preguntasFrecuentes"><button mat-button>Preguntas Frecuentes</button></a>
+        <a routerLink="contacto"><button mat-button>Contacto</button></a>
+        <a routerLink="ayuda"> <button mat-button><mat-icon>help</mat-icon> </button></a>
       </div>
     </div>
 
     <div>
       <button *ngIf="tamano" mat-icon-button >
-        <mat-icon>more_vert</mat-icon>
+        <a routerLink="login"><mat-icon>details</mat-icon></a>
       </button>
-      <button *ngIf="!tamano" fxLayoutAlign="end" mat-button>Login</button>
+      <a routerLink="login"><button *ngIf="!tamano" fxLayoutAlign="end" mat-button><mat-icon>login</mat-icon></button></a>
     </div>
 
   </mat-toolbar-row>
   <mat-toolbar-row *ngIf="tamano" fxLayoutAlign="space-between end">
-    <button mat-button>Home</button>
-    <button mat-button>About us</button>
-    <button mat-button>Contact us</button>
+    <a routerLink="home"> <button mat-button>Home</button></a>
+    <a routerLink="about"><button mat-button>Sobre nosotros</button></a>
+    <a routerLink="preguntasFrecuentes"><button mat-button>Preguntas Frecuentes</button></a>
+    <a routerLink="contacto"><button mat-button>Contacto</button></a>
   </mat-toolbar-row>
 </mat-toolbar>
 

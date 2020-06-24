@@ -18,6 +18,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { AboutComponent } from './about/about.component';
+import { PreguntasComponent } from './preguntas/preguntas.component';
+import { DestinoComponent } from './destino/destino.component';
+import { ClienteComponent } from './cliente/cliente.component';
+import { AyudaComponent } from './ayuda/ayuda.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { LoginComponent } from './login/login.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -25,6 +33,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MainNavComponent,
     HomeComponent,
     SideNavComponent,
+    AboutComponent,
+    PreguntasComponent,
+    DestinoComponent,
+    ClienteComponent,
+    AyudaComponent,
+    ContactoComponent,
+    LoginComponent,
     
   ],
   imports: [
@@ -41,7 +56,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FlexLayoutModule,
     MatMenuModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,11 @@
+table{
+    width: 100%;
+}
+.contacto{
+    position: absolute;
+    top: 56px;
+    left: 200px;
+    right: 0px;
+    bottom: 0px;
+    
+}

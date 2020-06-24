@@ -1,0 +1,32 @@
+<mat-card class="contact-card">
+    <mat-card-header>
+      <mat-card-title>Cliente</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form id="contactForm">
+      <mat-form-field>
+        <input matInput placeholder="Nombre" class="form-control" formControlName="firstname">
+         
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput placeholder="Apellido Paterno" class="form-control"  formControlName="ApePat">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput placeholder="Apellido Materno" class="form-control"  formControlName="ApeMat">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+          <input  matInput placeholder="Correo" class="form-control"  formControlName="correo">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input  matInput placeholder="Telefono" class="form-control"  formControlName="duracion">
+        </mat-form-field>
+        <br>
+      <button mat-button color="primary">Submit</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  

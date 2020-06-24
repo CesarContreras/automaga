@@ -1,0 +1,39 @@
+<mat-card class="contact-card">
+  <mat-card-header>
+    <mat-card-title>Nuevo destino</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form id="contactForm">
+    <mat-form-field>
+      <input matInput placeholder="Cliente" class="form-control" formControlName="firstname">
+       
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput placeholder="Destino" class="form-control"  formControlName="lastname">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput placeholder="Tipo de camion" class="form-control"  formControlName="email">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input type="date" matInput placeholder="Fecha de salida" class="form-control"  formControlName="FechaS">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input type="number" matInput placeholder="Numero de personas" class="form-control"  formControlName="duracion">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input type="date" matInput placeholder="Fecha de regreso" class="form-control"  formControlName="FechaR">
+      </mat-form-field>
+      <br>
+    <mat-form-field>
+      <textarea rows="4" cols="50" matInput placeholder="Especificaciones especiales" class="form-control"  formControlName="message"></textarea>
+    </mat-form-field>
+    <br>
+    <button mat-button color="primary">Submit</button>
+    </form>
+  </mat-card-content>
+</mat-card>

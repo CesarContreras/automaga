@@ -1,18 +1,16 @@
-<article [class.content]="!deviceXs" [class.content-mob]="deviceXs">
+<article [class.content]="!tamano" [class.content-mob]="tamano">
     <mat-toolbar>
-      <button *ngIf="deviceXs" type="button" mat-icon-button (click)="drawer.toggle()">
+      <button *ngIf="tamano" type="button" mat-icon-button (click)="drawer.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
     </mat-toolbar>
   
     <mat-drawer-container class="example-container">
-      <mat-drawer #drawer [mode]="deviceXs?'over':'side'" [opened]="deviceXs?false:true"  fxFlex="20"
-        fxLayout="column" fxLayoutAlign="start space-between" [style.marginTop.px]="10">
+      <mat-drawer #drawer [mode]="tamano?'over':'side'" [opened]="tamano?false:true"  fxFlex="20"
+        fxLayout="column" fxLayoutAlign="start space-between" [style.marginTop.px]="85">
         <mat-list  class="list-width" >
-          <mat-list-item  class="list-item" matRipple></mat-list-item>
-          <mat-list-item class="list-item" matRipple>Nuevo Destino</mat-list-item>
-          <mat-list-item class="list-item" matRipple>Cliente</mat-list-item>
-          <mat-list-item  class="list-item" matRipple>Agenda</mat-list-item>
+          <mat-list-item class="list-item" matRipple><a routerLink="Destino">Nuevo Destino</a></mat-list-item>
+          <mat-list-item class="list-item" matRipple> <a routerLink="Cliente">Cliente</a></mat-list-item>
         </mat-list>
       </mat-drawer>
     </mat-drawer-container>

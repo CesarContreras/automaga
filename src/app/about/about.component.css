@@ -1,0 +1,43 @@
+.content {
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+  
+  }
+  .fuente{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: large;
+      font-style: italic;
+  }
+
+  
+  .example-card {
+    position: absolute;
+    top: 65px;
+    left: 200px;
+    right: 0px;
+    bottom: 0px;
+    max-width: 100%;
+    margin: 0px 5px 5px 0px;
+    
+  }
+  img{
+    background-size: cover;
+    position: relative;
+    top:0px; left:10px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%; 
+  }
+  
+  .example-header-image {
+   
+    background-size: cover;
+  }
+  
+
+
+  

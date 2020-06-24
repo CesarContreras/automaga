@@ -1,6 +1,9 @@
-.home{
+img{
     background-size: cover;
     position: relative;
-    top:40px; left:300px;
-    width: auto;
+    top:60px; left:200px;
+    width: 1150px;
+    height: 565px;
+    max-width: 100%;
+  
 }
